@@ -1,0 +1,255 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+#multi-step-form-container {
+	margin-top: 5rem;
+}
+.text-center {
+	text-align: center;
+}
+.mx-auto {
+	margin-left: auto;
+	margin-right: auto;
+}
+.pl-0 {
+	padding-left: 0;
+}
+.button {
+	padding: 0.7rem 1.5rem;
+	border: 1px solid #4361ee;
+	background-color: #4361ee;
+	color: #fff;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.submit-btn {
+	border: 1px solid #0e9594;
+	background-color: #0e9594;
+}
+.mt-3 {
+	margin-top: 2rem;
+}
+.d-none,
+.errForm,
+.errProductForm,
+.processing {
+	display: none;
+}
+
+/* form-step css */
+#multi-step-form-container {
+	max-width: 740px;
+}
+.form-step {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 20px;
+	padding: 3rem;
+}
+.form-step h2 {
+	font-size: 30px;
+	margin: 0;
+}
+#wooQuickOrderForm h5 {
+	margin-bottom: 10px;
+	font-size: 17px;
+	font-weight: 400;
+}
+.font-normal {
+	font-weight: normal;
+}
+ul.form-stepper {
+	counter-reset: section;
+	margin-bottom: 3rem;
+}
+ul.form-stepper .form-stepper-circle {
+	position: relative;
+}
+ul.form-stepper .form-stepper-circle span {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%) translateX(-50%);
+}
+.form-stepper-horizontal {
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+ul.form-stepper > li:not(:last-of-type) {
+	margin-bottom: 0.625rem;
+	-webkit-transition: margin-bottom 0.4s;
+	-o-transition: margin-bottom 0.4s;
+	transition: margin-bottom 0.4s;
+}
+.form-stepper-horizontal > li:not(:last-of-type) {
+	margin-bottom: 0 !important;
+}
+.form-stepper-horizontal li {
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	-webkit-box-align: start;
+	-ms-flex-align: start;
+	align-items: start;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+}
+.form-stepper-horizontal li:not(:last-child):after {
+	position: relative;
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	height: 1px;
+	content: "";
+	top: 32%;
+}
+.form-stepper-horizontal li:after {
+	background-color: #dee2e6;
+}
+.form-stepper-horizontal li.form-stepper-completed:after {
+	background-color: #4da3ff;
+}
+.form-stepper-horizontal li:last-child {
+	flex: unset;
+}
+.errForm,
+.errProductForm {
+	color: red;
+	font-size: 15px;
+}
+#wooQuickOrderForm label {
+	font-size: 15px;
+}
+#wooQuickOrderForm input {
+	width: 100%;
+	padding: 12px 20px;
+	margin-bottom: 8px;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+ul.form-stepper li a .form-stepper-circle {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	margin-right: 0;
+	line-height: 1.7rem;
+	text-align: center;
+	background: rgba(0, 0, 0, 0.38);
+	border-radius: 50%;
+}
+.form-stepper .form-stepper-active .form-stepper-circle {
+	background-color: #4361ee !important;
+	color: #fff;
+}
+.form-stepper .form-stepper-active .label {
+	color: #4361ee !important;
+}
+.form-stepper .form-stepper-active .form-stepper-circle:hover {
+	background-color: #4361ee !important;
+	color: #fff !important;
+}
+.form-stepper .form-stepper-unfinished .form-stepper-circle {
+	background-color: #f8f7ff;
+}
+.form-stepper .form-stepper-completed .form-stepper-circle {
+	background-color: #0e9594 !important;
+	color: #fff;
+}
+.form-stepper .form-stepper-completed .label {
+	color: #0e9594 !important;
+}
+.form-stepper .form-stepper-completed .form-stepper-circle:hover {
+	background-color: #0e9594 !important;
+	color: #fff !important;
+}
+.form-stepper .form-stepper-active span.text-muted {
+	color: #fff !important;
+}
+.form-stepper .form-stepper-completed span.text-muted {
+	color: #fff !important;
+}
+.form-stepper .label {
+	font-size: 1rem;
+	margin-top: 0.5rem;
+}
+.form-stepper a {
+	cursor: default;
+}
+/* Table CSS */
+#product-list,
+.customer-info,
+.order-info {
+	border-collapse: collapse;
+	width: 100%;
+}
+#product-list td,
+#product-list th,
+.customer-info td,
+.customer-info th,
+.order-info td,
+.order-info th {
+	border: 1px solid #ddd;
+	padding: 8px;
+	font-size: 17px;
+}
+#product-list tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+#product-list tr:hover,
+.customer-info tr:hover,
+.order-info tr:hover {
+	background-color: #ddd;
+}
+#product-list th,
+.customer-info th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	background-color: #0e9594;
+	color: #ffffff;
+	font-size: 15px;
+	font-weight: 400;
+}
+.order-info .bgcolor th {
+	background-color: #0e9594;
+	color: #ffffff;
+}
+.order-info th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	font-size: 15px;
+	font-weight: 400;
+}
+.order-info th.text-right {
+	text-align: right;
+}
+.customer-info p,
+.order-info p {
+	font-size: 17px;
+	margin-top: 0px;
+}
+.customer-info strong,
+.order-info strong,
+.order-details span.bold {
+	font-weight: 400;
+}
+.customer-info span,
+.order-info span {
+	font-weight: 200;
+}
+.processing {
+	font-size: 15px;
+	margin-left: 3%;
+}
